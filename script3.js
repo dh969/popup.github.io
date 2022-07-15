@@ -24,6 +24,7 @@ $('.clicks').on('click',function(){
 });
 
 $('#button').on('click',function(){
+    count=count+1;
     $('#box').removeClass('show');
 });
 $('#username').keyup(function(){
@@ -87,6 +88,7 @@ else
 }
 
 $('.submission').on('click',function(){
+    count=count+1;
     if(!username_validation()&&!email_validation()){
         $('#box').removeClass('show');
     }
